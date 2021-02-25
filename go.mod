@@ -1,3 +1,3 @@
-module shuwen-go
+module github.com/shuwenhe/shuwen-go
 
-go 1.14
+go 1.16
