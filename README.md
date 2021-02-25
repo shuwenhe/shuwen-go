@@ -1,4 +1,4 @@
-# shuwen-go
+# Go标准库源码实战
 https://github.com/shuwenhe/shuwen-go
 # shuwen-go1
 https://github.com/shuwenhe/shuwen-go1
