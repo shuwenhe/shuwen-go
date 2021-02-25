@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"sync"
 	"time"
@@ -9,23 +10,23 @@ import (
 var wg sync.WaitGroup
 
 func main() {
-	var exitChan = make(chan struct{})
+	ctx, cancel := context.WithCancel(context.Background())
 	wg.Add(1)
-	go worker(exitChan)
+	go worker(ctx)
 	time.Sleep(time.Second * 5)
-	exitChan <- struct{}{}
+	cancel()
 	wg.Wait()
 	fmt.Println("finish...")
 }
 
-func worker(ch <-chan struct{}) {
+func worker(ctx context.Context) {
 	defer wg.Done()
 LABEL:
 	for {
 		fmt.Println("worker...")
 		time.Sleep(time.Second)
 		select {
-		case <-ch:
+		case <-ctx.Done():
 			break LABEL
 		default:
 		}
