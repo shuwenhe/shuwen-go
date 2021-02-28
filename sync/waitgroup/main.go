@@ -12,7 +12,7 @@ var (
 )
 
 func main() {
-	wg.Add(1)
+	wg.Add(3)
 	go worker()
 	time.Sleep(time.Second * 5) // 业务逻辑执行时间
 	exit = true
@@ -21,7 +21,7 @@ func main() {
 }
 
 func worker() {
-	defer wg.Done()
+	defer wg.Done() // 延迟关闭
 	for {
 		fmt.Println("学思题库-书文教育")
 		time.Sleep(time.Second)
