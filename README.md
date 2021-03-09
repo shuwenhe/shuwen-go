@@ -1,7 +1,5 @@
 # Go标准库源码实战
 https://github.com/shuwenhe/shuwen-go
-# shuwen-go1
-https://github.com/shuwenhe/shuwen-go1
 # 哔哩哔哩
 https://space.bilibili.com/407705719
 # 西瓜视频
