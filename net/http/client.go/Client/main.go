@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-
+	http.Transport
 }
 
 func Client() {

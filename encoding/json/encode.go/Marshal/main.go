@@ -27,6 +27,7 @@ func Marshal() {
 		9.9,
 	}
 	b, err := json.Marshal(gobook) // func Marshal(v interface{}) ([]byte, error) {
+	json.Unmarshal
 	fmt.Println("b = ", b)         // struct->[]byte
 	fmt.Println("b = ", string(b)) // []byte->string
 	checkErr(err)

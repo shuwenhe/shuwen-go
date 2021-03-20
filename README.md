@@ -1,4 +1,16 @@
 # Go标准库源码实战
+# shuwen-os
+# 算法第一人北大何书文 
+# 邮箱 1201220707@pku.edu.cn 
+# 电话微信 15010729356
+# 下载代码：
+# http://www.shuwenclass.com/
+# http://www.xstiku.com/
+# 谢谢关注！！！
+# 欢迎三连，谢谢点赞！！！
+# 欢迎点个小星星
+# 欢迎提交 PR
+# 欢迎提交 issues
 https://github.com/shuwenhe/shuwen-go
 # 哔哩哔哩
 https://space.bilibili.com/407705719
