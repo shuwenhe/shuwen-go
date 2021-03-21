@@ -1,9 +1,8 @@
 package main
 
 import (
+	"log"
 	"os"
-
-	"github.com/shuwenhe/shuwen-go/errors"
 )
 
 const (
@@ -17,5 +16,8 @@ func main() {
 
 func Dir() {
 	f, err := os.Create(UPLOAD_DIR)
-	errors.CheckError()
+	if err != nil {
+		panic(err)
+	}
+	log.Println("f = ", f)
 }
